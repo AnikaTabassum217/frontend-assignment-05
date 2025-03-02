@@ -10,8 +10,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-[#F4F7FF] h-full">
-
+<body class="h-full">
+    
     <div class="container mx-auto bg-white rounded-2xl">
         <div class="flex justify-between p-4">
             <div class="flex items-center justify-center space-x-2">
@@ -23,8 +23,9 @@
                     <div class="p-3"> <img src="./assets/checkbox.png" alt=""></div>
                     <div id="total-number" class="p-3 font-bold text-xl">23</div>
                 </div>
-                <div class="bg-[#F4F7FF] rounded-full"><img class="p-2" src="./assets/theme-btn.png" alt="">
-                </div>
+                <button class="bg-[#F4F7FF] rounded-full cursor-pointer">
+                    <img class="p-2" src="./assets/theme-btn.png" alt="">
+                </button>
             </div>
         </div>
     </div>
@@ -46,12 +47,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-span-2 bg-green-00">
+                            <div id="discover" class="col-span-2 bg-green-00 ">
                             <div class="col-span-2 p-6 flex justify-between items-center rounded-xl
-                            bg-gradient-to-r from-indigo-500 via-indigo-400 to-indigo-200
+                            bg-gradient-to-r from-indigo-500 via-indigo-400 to-indigo-200 cursor-pointer
                             font-medium text-xl text-white">
                                 <div><img src="./assets/board.png" alt=""></div>
-                                <div>Discover Something New Today!</div>
+                                <button class="cursor-pointer">Discover Something New Today!</button>
                                 </div>
                             </div>
                             <div class="col-span-1">
@@ -237,7 +238,6 @@
                     </div>
 
                     <div class="w-full border-2 border-dashed text-[#3752FD] opacity-20 mt-2">
-
                     </div>
 
                     <div id="activity" class="mt-6 p-4">
@@ -254,18 +254,37 @@
         </div>
     </div>
 
+<script src="./script/discover.js"></script>
 <script src="./script/completedSix.js"></script>    
 <script src="./script/completedFive.js"></script>    
-<script src="./script/completedFour.js"></script>
+<script src="./script/completedFour.js"></script>F
 <script src="./script/completedThree.js"></script>    
 <script src="./script/completedTwo.js"></script>
 <script src="./script/completedOne.js"></script>
 <script src="./utilities/utilities.js"></script>
 
 <script>
+
 const date = new Date();
 let text = date.toDateString()
 document.getElementById("date").innerHTML = text;
+
+document.getElementById('discover').addEventListener('click',function(){
+    console.log('discover page')
+    window.location.href = './blog.html'             
+})
+
+const body = document.querySelector('body');
+    const button = document.querySelector('button')
+    const colors=['salmon','green','wheat','pink','silver','bronze','crimson','chocolate']
+
+    body.style.backgroundColor='azure';
+
+    button.addEventListener('click',function(){
+        const colorIndex = parseInt(Math.random()*colors.length);
+        body.style.backgroundColor=colors[colorIndex]
+    })
+
 </script>
 </body>
 
