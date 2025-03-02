@@ -8,9 +8,20 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Font -Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .font-poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
 </head>
 
-<body class="h-full">
+<body class="h-full py-8 font-poppins">
     
     <div class="container mx-auto bg-white rounded-2xl">
         <div class="flex justify-between p-4">
@@ -33,7 +44,7 @@
     <div class="container mx-auto mt-2">
         <div class="grid grid-cols-4 gap-10">
             <div class="col-span-3 ">
-                <div class="bg-white rounded-2xl">
+                <div class="bg-white rounded-2xl pb-4">
                     <div class="bg-red-00 mt-4 px-4 py-4">
                         <div class="grid grid-cols-4 gap-2">
                             <div class="col-span-1">
@@ -42,7 +53,7 @@
                                         <img class="p-2" src="./assets/checkbox.png" alt="Image of check box">
                                     </div>
                                     <div>
-                                        <div class="opacity-75 ">Task Assigned <br> <span id="task-assigned" class="font-bold text-3xl">05</span></div> 
+                                        <div class="opacity-75 ">Task Assigned <br> <span id="task-assigned" class="font-bold text-3xl">06</span></div> 
                                         
                                     </div>
                                 </div>
@@ -74,11 +85,7 @@
                                     <div class="p-4">
                                         <button class="btn bg-white px-2 py-2 font-normal text-base">ShopEase</button>
                                         <p id="task-name-one" class="font-medium text-2xl mt-2 ">Fix Mobile Button Issue</p>
-                                        <div class="mt-2 bg-white p-2 rounded-lg opacity-50 font-normal text-base">Debug
-                                            using Chrome DevTools, check for overlapping elements,
-                                            and
-                                            ensure onClick works properly
-                                            and ensure onClick works properly</div>
+                                        <div class="mt-2 bg-white p-2 rounded-lg opacity-50 font-normal text-base">The button is an interactive element that requires a specific placement for better usability</div>
                                         <div class="w-auto border-2 border-dashed text-[#3752FD] opacity-20 mt-2"></div>
                                         <div class="flex justify-between mt-2">
                                             <div>
@@ -100,8 +107,7 @@
                                         <button class="btn bg-white px-2 py-2 font-normal text-base">CloudSync</button>
                                         <p id="task-name-two" class="font-medium text-2xl mt-2 ">Add Dark Mode</p>
                                         <div class="mt-2 bg-white p-2 rounded-lg opacity-50 font-normal text-base">
-                                            Store the user's preference in localStorage, update CSS variables
-                                            dynamically, and apply a smooth transition effect.
+                                            Click the button for dark and light mode which feature allows users to switch between the two schemes based on their preferences.
                                         </div>
                                         <div class="w-auto border-2 border-dashed text-[#3752FD] opacity-20 mt-2"></div>
                                         <div class="flex justify-between mt-2">
@@ -124,9 +130,7 @@
                                         <button class="btn bg-white px-2 py-2 font-normal text-base">SwiftPay</button>
                                         <p id="task-name-three" class="font-medium text-2xl mt-2 ">Optimize Home page </p>
                                         <div class="mt-2 bg-white p-2 rounded-lg opacity-50 font-normal text-base">
-                                            Debug using Chrome DevTools, check for overlapping elements, and ensure
-                                            onClick works properly
-                                            and ensure onClick works properly
+                                            Your website is your most powerful conversion tool.Optimizing a web page can improve its performance and search engine ranking.
                                         </div>
                                         <div class="w-auto border-2 border-dashed text-[#3752FD] opacity-20 mt-2"></div>
                                         <div class="flex justify-between mt-2">
@@ -151,13 +155,9 @@
                             <div class="px-2 ">
                                 <div class="bg-[#F4F7FF] rounded-2xl">
                                     <div class="p-4">
-                                        <button class="btn bg-white px-2 py-2 font-normal text-base">ShopEase</button>
-                                        <p id="task-name-four" class="font-medium text-2xl mt-2 ">Fix Mobile Button Issue</p>
-                                        <div class="mt-2 bg-white p-2 rounded-lg opacity-50 font-normal text-base">Debug
-                                            using Chrome DevTools, check for overlapping elements,
-                                            and
-                                            ensure onClick works properly
-                                            and ensure onClick works properly</div>
+                                        <button class="btn bg-white px-2 py-2 font-normal text-base">Meta</button>
+                                        <p id="task-name-four" class="font-medium text-2xl mt-2 ">Add new emoji 🤲</p>
+                                        <div class="mt-2 bg-white p-2 rounded-lg opacity-50 font-normal text-base">To add emojis on a website using HTML, you can use the Unicode character for each emoji because you must know the character set used in the page.</div>
                                         <div class="w-auto border-2 border-dashed text-[#3752FD] opacity-20 mt-2"></div>
                                         <div class="flex justify-between mt-2">
                                             <div>
@@ -176,11 +176,10 @@
                             <div class="px-2 ">
                                 <div class="bg-[#F4F7FF] rounded-2xl">
                                     <div class="p-4">
-                                        <button class="btn bg-white px-2 py-2 font-normal text-base">CloudSync</button>
-                                        <p id="task-name-five" class="font-medium text-2xl mt-2 ">Add Dark Mode</p>
+                                        <button class="btn bg-white px-2 py-2 font-normal text-base">Google LLC</button>
+                                        <p id="task-name-five" class="font-medium text-2xl mt-2 ">Integrate OpenAI API </p>
                                         <div class="mt-2 bg-white p-2 rounded-lg opacity-50 font-normal text-base">
-                                            Store the user's preference in localStorage, update CSS variables
-                                            dynamically, and apply a smooth transition effect.
+                                            The OpenAI API provides a simple interface to state-of-the-art AI models for natural language processing, image generation, semantic search, and speech recognition. 
                                         </div>
                                         <div class="w-auto border-2 border-dashed text-[#3752FD] opacity-20 mt-2"></div>
                                         <div class="flex justify-between mt-2">
@@ -200,12 +199,10 @@
                             <div class="px-2 ">
                                 <div class="bg-[#F4F7FF] rounded-2xl">
                                     <div class="p-4">
-                                        <button class="btn bg-white px-2 py-2 font-normal text-base">SwiftPay</button>
-                                        <p id="task-name-six" class="font-medium text-2xl mt-2 ">Optimize Home page </p>
+                                        <button class="btn bg-white px-2 py-2 font-normal text-base">Glassdoar</button>
+                                        <p id="task-name-six" class="font-medium text-2xl mt-2 ">Improve Job searching </p>
                                         <div class="mt-2 bg-white p-2 rounded-lg opacity-50 font-normal text-base">
-                                            Debug using Chrome DevTools, check for overlapping elements, and ensure
-                                            onClick works properly
-                                            and ensure onClick works properly
+                                            You can improve your job search by networking, building your online presence, and preparing for interviews. Ready to face challenges at any time. Which is show your positivity.
                                         </div>
                                         <div class="w-auto border-2 border-dashed text-[#3752FD] opacity-20 mt-2"></div>
                                         <div class="flex justify-between mt-2">
@@ -257,7 +254,7 @@
 <script src="./script/discover.js"></script>
 <script src="./script/completedSix.js"></script>    
 <script src="./script/completedFive.js"></script>    
-<script src="./script/completedFour.js"></script>F
+<script src="./script/completedFour.js"></script>
 <script src="./script/completedThree.js"></script>    
 <script src="./script/completedTwo.js"></script>
 <script src="./script/completedOne.js"></script>

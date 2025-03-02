@@ -21,7 +21,7 @@
                 </div>
                 <button id="back" onClick="history_goback()"
                     class="btn font-medium text-base bg-[#3752FD] text-white rounded-lg">
-                Back to Desk</button>
+                    Back to Desk</button>
             </div>
         </div>
 
@@ -29,47 +29,83 @@
 
 
         <div class="bg-white p-4 rounded-lg mt-4">
-            <div class="font-bold text-lg">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="font-bold text-lg">Question-1: What are the different ways to select an element in the DOM?
+            </div>
             <div class="w-full border-2 border-dashed text-[#3752FD] opacity-20 mt-2">
             </div>
             <div class="text-md mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti eaque illum deleniti neque porro cum nemo ex? Quos modi eligendi totam itaque saepe similique. Et possimus accusamus aperiam? Laudantium.
+                <ul>
+                    <li>Using getElementById.</li>
+                    <li>Using getElementsByClassName.</li>
+                    <li>Using getElementsByTagName.</li>
+                    <li>Using querySelector.</li>
+                    <li>Using querySelectorAll.</li>
+                </ul>
             </div>
         </div>
 
         <div class="bg-white p-4 rounded-lg mt-4">
-            <div class="font-bold text-lg">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="font-bold text-lg">Question-2: What is the difference between innerHTML, innerText, and
+                textContent?</div>
             <div class="w-full border-2 border-dashed text-[#3752FD] opacity-20 mt-2">
             </div>
             <div class="text-md mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti eaque illum deleniti neque porro cum nemo ex? Quos modi eligendi totam itaque saepe similique. Et possimus accusamus aperiam? Laudantium.
+                <ul>
+                    <li><span class="font-semibold">innerHtml</span> returns all text, including html tags and browser render correctly</li>
+                    <li><span class="font-semibold">innerText</span> returns all text, ignores html tags.</li>
+                    <li><span class="font-semibold">textContents</span> 
+                        returns only text, ignores HTML tags. It deals with raw text and doesn't concern about styles
+                    </li>
+                </ul>
             </div>
         </div>
 
         <div class="bg-white p-4 rounded-lg mt-4">
-            <div class="font-bold text-lg">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="font-bold text-lg">Question-3: What is event delegation in the DOM?</div>
             <div class="w-full border-2 border-dashed text-[#3752FD] opacity-20 mt-2">
             </div>
             <div class="text-md mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti eaque illum deleniti neque porro cum nemo ex? Quos modi eligendi totam itaque saepe similique. Et possimus accusamus aperiam? Laudantium.
+                Event delegation is a technique, where event listener is apply on parent element. That event is also
+                used to
+                handle child element. As a result perfomance is good and no need to apply event listner for adding
+                others elements
+
             </div>
         </div>
 
         <div class="bg-white p-4 rounded-lg mt-4">
-            <div class="font-bold text-lg">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="font-bold text-lg">Question-4: What is event bubbling in the DOM?</div>
             <div class="w-full border-2 border-dashed text-[#3752FD] opacity-20 mt-2">
             </div>
             <div class="text-md mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti eaque illum deleniti neque porro cum nemo ex? Quos modi eligendi totam itaque saepe similique. Et possimus accusamus aperiam? Laudantium.
+                After clicking element, using capturing phase it goes to down.When gets the target element, is called
+                target phase.
+                Using 'bubbles up' it goes to upward.
             </div>
         </div>
 
         <div class="bg-white p-4 rounded-lg mt-4 ">
-            <div class="font-bold text-lg">Question-1: What are the different ways to select an element in the DOM?</div>
+            <div class="font-bold text-lg">Question-5: How do you create, add, and remove elements using JavaScript?
+            </div>
             <div class="w-full border-2 border-dashed text-[#3752FD] opacity-20 mt-2">
             </div>
             <div class="text-md mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae corrupti eaque illum deleniti neque porro cum nemo ex? Quos modi eligendi totam itaque saepe similique. Et possimus accusamus aperiam? Laudantium.
+                <p class="font-semibold">This is a portion of create and add element</p> <br>
+
+                const active = document.getElementById('activity') <br>
+                const div = document.createElement('div') <br>
+                div.innerHTML = `<div class='p-2  mt-2'>You have completed the task.</div>` <br>
+                active.appendChild(div) <br> <br>
+
+                <p class="font-semibold">Create Element</p>
+                const div = document.createElement('div') <br> <br>
+
+                <p class="font-semibold">Add Element</p>
+                active.appendChild(div)  <br> <br>
+
+                <p class="font-semibold">Remove Element</p>
+                const allInfo=document.getElementById('activity')
+                allInfo.remove();
             </div>
         </div>
 
